@@ -17,16 +17,28 @@
 	<bean id="addChamberAction" class="com.xiaolong.action.AddChamberAction">
 		<property name="chamberSvc" ref="chamberSvc"></property>
 	</bean>
+	
+	<bean id="dropDownAction"
+		class="com.xiaolong.action.DropDownAction">
+		<property name="chamberSvc" ref="chamberSvc"></property>
+	</bean>
 
 	<bean id="chamberSvc" class="com.xiaolong.svc.ChamberSvcImpl">
 		<property name="chamberDAO" ref="chamberDAO"></property>
+	</bean>
+	
+	<bean id="userSvc" class="com.xiaolong.svc.UserSvcImpl">
+		<property name="userDao" ref="userDao"></property>
 	</bean>
 
 	<bean id="chamberDAO" class="com.xiaolong.dao.ChamberDAOImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 	
-
+	<bean id="userDao" class="com.xiaolong.dao.UserDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="configLocation" value="classpath:hibernate.cfg.xml"></property>
@@ -38,5 +50,7 @@
 	</bean>
 	<tx:annotation-driven />
 
+	
+	
 	
 </beans>

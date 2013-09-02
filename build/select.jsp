@@ -11,7 +11,7 @@
 <s:form action="dropDownAction">
 <s:select label="Select from here" 
         headerKey="-1" headerValue="Select"
-        list="listChamber"  />
+        list="listChamber"/>
 <s:submit value="submit" name="Submit"></s:submit>
 </s:form>
 
