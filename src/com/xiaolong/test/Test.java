@@ -1,5 +1,8 @@
 package com.xiaolong.test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
