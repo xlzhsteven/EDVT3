@@ -3,6 +3,7 @@ package com.xiaolong.dao;
 import java.util.List;
 
 import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate3.HibernateTemplate;
 
 import com.xiaolong.model.Chamber;
 
