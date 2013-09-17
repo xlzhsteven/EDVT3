@@ -4,7 +4,8 @@ public class Chamber {
 	int id;
 	String name;
 	String location;
-
+	ProjectManagement projectManagement = new ProjectManagement();
+	
 	public Chamber() {
 	}
 

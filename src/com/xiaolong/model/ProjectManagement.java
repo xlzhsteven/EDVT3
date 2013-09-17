@@ -1,10 +1,40 @@
 package com.xiaolong.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProjectManagement {
 	int id;
 	int chamberId;
 	int engineerId;
 	int projectId;
+	List<Chamber> chamberList = new ArrayList<>();
+	List<Engineer> engineerList = new ArrayList<>();
+	List<Project> projectList = new ArrayList<>();
+
+	public List<Chamber> getChamberList() {
+		return chamberList;
+	}
+
+	public void setChamberList(List<Chamber> chamberList) {
+		this.chamberList = chamberList;
+	}
+
+	public List<Engineer> getEngineerList() {
+		return engineerList;
+	}
+
+	public void setEngineerList(List<Engineer> engineerList) {
+		this.engineerList = engineerList;
+	}
+
+	public List<Project> getProjectList() {
+		return projectList;
+	}
+
+	public void setProjectList(List<Project> projectList) {
+		this.projectList = projectList;
+	}
 
 	public ProjectManagement() {
 	}
